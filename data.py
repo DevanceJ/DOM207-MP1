@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 
-file_path = "/Users/devance/Sem7/DOM207/MP1/Serve.xlsx"
+file_path = "Serve.xlsx"
 df = pd.read_excel(file_path)
 
 df_cleaned = df.dropna(axis=1, how='all')
@@ -158,7 +158,7 @@ rows_removed = len(df) - len(df_cleaned)
 print(df_cleaned.iloc[170:180])
 print(f"Rows removed: {rows_removed}")
 
-output_file_path = "/Users/devance/Sem7/DOM207/MP1/Serve_Cleaned.xlsx"
-df_cleaned.to_excel(output_file_path, index=False)
-df_cleaned.describe()
+# output_file_path = "/Serve_Cleaned.xlsx"
+# df_cleaned.to_excel(output_file_path, index=False)
+# df_cleaned.describe()
 # print(f"Cleaned data saved to: {output_file_path}")
